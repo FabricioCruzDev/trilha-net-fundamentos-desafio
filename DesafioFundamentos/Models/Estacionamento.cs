@@ -36,7 +36,8 @@ namespace DesafioFundamentos.Models
         valorTotal = precoInicial + precoPorHora * horas;
 
         veiculos.Remove(placa);
-
+        
+        //Formatei a saída da variável valorTotal para string com duas casas decimais.
         Console.WriteLine($"O veículo {placa} foi removido e o preço total foi de: R$ {valorTotal.ToString("F2", CultureInfo.InvariantCulture)}");
       }
       else
